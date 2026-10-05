@@ -1,0 +1,57 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{xcolor}
+
+% Load hyperref exactly once with all necessary options
+\usepackage[pdftex, hidelinks, pdfpagemode=UseNone, pdfview=FitH, pdfstartview=FitH, bookmarks=false]{hyperref}
+
+\definecolor{brandblue}{HTML}{6600ff}
+\definecolor{brandgrey}{HTML}{333333}
+
+\begin{document}
+\pagestyle{empty}
+
+% Header Section: Logo centered vertically with text rows
+\noindent
+\begin{tabularx}{\textwidth}{@{} m{0.12\textwidth} m{0.86\textwidth} @{}}
+    \multirow{2}{*}{\includegraphics[width=0.12\textwidth]{assets/logo.png}} & 
+    {\Large \textbf{\color{brandblue} Twilight Psychology Client Referral Form}} \\[10pt]
+    & \textbullet Phone: 859-687-5843 \textbullet Fax: 502-324-3210 \textbullet Email: office@twilightpsychology.com
+\end{tabularx}
+
+\vspace{0.35in}
+\noindent \textit{Thank you for the referral. Please fax the completed form and 
+attach relevant medical records, medication history, clinical records to 502-324-3210.}
+
+\section*{\color{brandgrey} Part A. Referral Information}
+\noindent Date of Referral: \TextField[name=referral_date, width=1.5in, bordercolor={0.078 0 0.102}]{} \\[10pt]
+\noindent Referring Person/Organization: \TextField[name=referring_org, width=3in, bordercolor={0.078 0 0.102}]{} \\[10pt]
+\noindent Contact Number/Email: \TextField[name=referral_contact, width=3in, bordercolor={0.078 0 0.102}]{}
+
+\section*{\color{brandgrey} Part B. Client Information}
+\noindent Full Name: \TextField[name=client_name, width=2.5in, bordercolor={0.078 0 0.102}]{} \quad DOB: \TextField[name=dob, width=1.5in, bordercolor={0.078 0 0.102}]{} \\[10pt]
+\noindent Parent/Guardian (if minor): \TextField[name=guardian, width=2.5in, bordercolor={0.078 0 0.102}]{} \\[10pt]
+\noindent Phone: \TextField[name=phone, width=2in, bordercolor={0.078 0 0.102}]{} \quad Email: \TextField[name=client_email, width=3in, bordercolor={0.078 0 0.102}]{} \\[10pt]
+\noindent Health Insurance: \TextField[name=insurance, width=2in, bordercolor={0.078 0 0.102}]{} \quad Emergency Contact: \TextField[name=emergency, width=2in, bordercolor={0.078 0 0.102}]{}
+
+\section*{\color{brandgrey} Part C. Presenting Concerns}
+\noindent Reason for Referral: \\[5pt]
+\noindent \CheckBox[name=check_assess]{} Assessment/Evaluation \quad \CheckBox[name=check_therapy]{} Therapy/Counseling \quad \CheckBox[name=check_meds]{} Medication Management \\[10pt]
+\noindent Other: \TextField[name=other_reason, width=4in, bordercolor={0.078 0 0.102}]{}
+
+\section*{\color{brandgrey} Part D. Relevant Information}
+\noindent Medical/Psychiatric History: \\[5pt]
+\noindent \TextField[name=med_history, width=\textwidth, multiline=true, height=0.6in, bordercolor={0.078 0 0.102}]{} \\[10pt]
+\noindent Current Medications: \\[5pt]
+\noindent \TextField[name=curr_meds, width=\textwidth, multiline=true, height=0.6in, bordercolor={0.078 0 0.102}]{}
+
+\section*{\color{brandgrey} Part E. Risk Concerns}
+\noindent \CheckBox[name=risk_suicide]{} Suicidal Ideation/Behavior \quad \CheckBox[name=risk_selfharm]{} Self-Harm \quad \CheckBox[name=risk_aggression]{} Aggression/Violence Risk \\[10pt]
+\noindent Substance Use Concerns: \CheckBox[name=substance_yes]{} Yes \quad \CheckBox[name=substance_no]{} No \\[10pt]
+\noindent Other: \TextField[name=other_risk, width=0.85\textwidth, multiline=true, height=0.3in, bordercolor={0.078 0 0.102}]{}
+
+\end{document}

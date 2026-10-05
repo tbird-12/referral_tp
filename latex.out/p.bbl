@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{wang2021unleashing}
+Bowen Wang, Kangjie Lu, Qiushi Wu, and Aditya Pakki.
+\newblock Unleashing fuzzing through comprehensive, efficient, and faithful
+  exploitable-bug exposing.
+\newblock {\em IEEE Transactions on Dependable and Secure Computing}, 2021.
+
+\bibitem{wu2021understanding}
+Qiushi Wu, Aditya Pakki, Navid Emamdoost, Stephen McCamant, and Kangjie Lu.
+\newblock Understanding and detecting disordered error handling with precise
+  function pairing.
+\newblock In {\em 30th $\{$USENIX$\}$ Security Symposium ($\{$USENIX$\}$
+  Security 21)}, 2021.
+
+\bibitem{pakki2020exaggerated}
+Aditya Pakki and Kangjie Lu.
+\newblock Exaggerated error handling hurts! an in-depth study and context-aware
+  detection.
+\newblock In {\em Proceedings of the 2020 ACM SIGSAC Conference on Computer and
+  Communications Security}, pages 1203--1218, 2020.
+
+\bibitem{lu2019detecting}
+Kangjie Lu, Aditya Pakki, and Qiushi Wu.
+\newblock Detecting missing-check bugs via semantic-and context-aware
+  criticalness and constraints inferences.
+\newblock In {\em 28th $\{$USENIX$\}$ Security Symposium ($\{$USENIX$\}$
+  Security 19)}, pages 1769--1786, 2019.
+
+\bibitem{lu2019automatically}
+Kangjie Lu, Aditya Pakki, and Qiushi Wu.
+\newblock Automatically identifying security checks for detecting kernel
+  semantic bugs.
+\newblock In {\em European Symposium on Research in Computer Security}, pages
+  3--25. Springer, Cham, 2019.
+
+\end{thebibliography}
